@@ -1,0 +1,76 @@
+.integration{
+    max-width: 1457px;
+    padding: 0 15px;
+    margin: 0 auto 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-brand{
+        max-width: 480px;
+        //su dung 1 trong 2
+        //1
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 85px;
+        //4 cai tu xep hang
+        //2
+        // display: flex;
+        // flex-wrap: wrap;
+        // gap: 85px;
+        // align-items: center;
+
+        padding-right: 297px;
+    }
+    &-content{
+        width: 100%;
+        max-width: 688px;
+    }
+    &-caption{
+        font-family: $font-secondary;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0.2em;
+        color: #525596;
+        padding-left: 110px;//day qua phai 1 xius
+        margin-bottom: 33px;
+        position: relative; //them vo giong o duoi moi thay
+        //ve 1 duong gach ngang o trc
+        &:before{
+            content: "";
+            width: 80px;
+            height: 1px;
+            background-color: #525596;
+            left: 0;
+            position: absolute; //them vo moi thay
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &-heading{
+        max-width: 480px;
+        font-family: $font-secondary;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 160%;
+    }
+    &-desc{
+        max-width: 687px;
+        font-family: $font-secondary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 180%;
+        margin-bottom: 44px;
+    }
+    &-btn{
+        color: $secondary-color;
+        font-family:  $font-secondary;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 180%;
+    }
+}

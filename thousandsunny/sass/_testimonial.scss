@@ -1,0 +1,42 @@
+.testimonial{
+    margin-top: 240px;
+    margin-bottom: 240px;
+    &-main{
+        max-width: 1070px;
+        padding-left: 50px;
+        position: relative;
+        
+    }
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-content{
+        max-width: 450px;
+    }
+    &-rating{
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+        color: #ebe70d;
+    }
+    &-desc{
+        color: black;
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    &-name{
+        font-size: 22px;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 10px;
+    }
+    &-job{
+        font-size: 18px;
+        color: black;
+    }
+}

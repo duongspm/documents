@@ -1,0 +1,77 @@
+.youcan{
+    max-width: 1547px;
+    padding: 0 15px;
+    margin: 0 auto 160px;
+    gap: 0 67px;
+    //cua minh
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > * {
+        width: 50%;
+    }
+    &-title{
+        font-family: $font-primary;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 160%;
+        color: $primary-color;
+        span{
+            color: $secondary-color;
+        }
+    }
+    &-desc{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 180%;
+        /* or 43px */
+        letter-spacing: 0.02em;
+        color: $gray;
+    }
+    &-more{
+        font-size: 22px;
+        line-height:180%;
+        text-decoration: underline;
+        color: $gray;
+    }
+    &-images{
+        width: 600px;
+        height: 400px;  
+    }
+    &-image{
+        position: relative;
+        width: 600px;
+        height: 400px;  
+    }
+    &-icon{
+        //nam len tren
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        // bottom: 0;
+        // left: 0;
+        // //border-radius: 20px;
+        // //background: white;
+        // z-index: 1;
+        // //canh giua
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // //flex-direction: column; //thanh 1 cot
+        // color: $blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 100rem;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 10;
+        color: $blue;
+    }
+}

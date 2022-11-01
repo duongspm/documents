@@ -1,0 +1,20 @@
+.explore{
+    margin-top: 270px;
+    margin-bottom: 292px;
+    &-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:0 50px;
+    }
+    &-content{
+        max-width: 507px;
+        padding-right: 68px;
+    }
+    &-heading{
+        margin-bottom: 20px;
+    }
+    &-desc{
+        margin-bottom: 33px;
+    }
+}

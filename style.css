@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+}
+
+p {
+  color: red;
+  padding: 2rem;
+  background-color: #00aeff;
+}
+
+.header {
+  background-color: black;
+  padding: 2rem;
+}
+.header__inner {
+  color: #fff;
+}
+.header__inner__text {
+  color: blue;
+}
+.header__inner__text:hover {
+  background-color: chocolate;
+}
+.header__inner:hover {
+  background: cyan;
+}
+.header:hover {
+  background: cyan;
+}
+
+.box {
+  background-color: #2434c9;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/*# sourceMappingURL=style.css.map */

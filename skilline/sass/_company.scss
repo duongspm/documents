@@ -1,0 +1,27 @@
+.company{
+    //co maxwidth nen dung marginleft marginrigt auto canh giua
+    max-width: 1370px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 160px;
+    &-heading{
+        text-align: center;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 160%;
+        color: $gray;
+        letter-spacing: 0.02em;
+        margin-bottom: 32px;
+    }
+    &-logos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 45px;
+    }
+    &-logo img{
+        margin: 0 auto;
+        //tu dinh dang giua cai khung cua no
+    }
+}

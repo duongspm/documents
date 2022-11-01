@@ -1,0 +1,85 @@
+$primary-color:#2F327D;
+$secondary-color:#F48C06;
+$third-color:#65DAFF;
+$gray:#696984;
+$gray-dark:#464646;
+$gray-darker:#252641;
+$gray-light:#6C6C6C;
+$purple:#5b72ee;
+$yellow:#fff2e1;
+$blue:#29b9e7;
+
+$font-primary:"Poppins", sans-serif;
+$font-secondary:"Nunito Sans", sans-serif;
+
+// .wrapper{
+//     width: 1920px;
+// }
+body{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1;
+    color: $gray-darker;
+    font-family: $font-primary;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style-type: none !important;
+}
+
+.btn{
+    display: inline-block; /*nằm ngang*/
+    font-size: 22px;
+    font-weight: 500;
+    font-family: $font-primary;
+    border: 0;
+    line-height: calc(33/22);
+    outline: none;
+    border: none;
+    padding: 13px 50px;
+    border-radius: 100rem;
+    cursor: pointer; 
+    //border: 1px solid $secondary-color;
+
+}
+.btn--white{
+    color: $gray-light;
+    background-color: #fff;
+    border: 1px solid $secondary-color;
+    margin-right: 20px;
+}
+.btn--primary{
+    color: #fff;
+    background-color:$secondary-color;
+}
+.global{
+    &-heading{
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 34px;
+        line-height: calc(81/54);
+        //ty le fontsize voi lineheight khi phong to thu nho
+        //font-size: 54px;
+        //line-height: 81px;
+        color: $primary-color;
+        span{
+            color: $secondary-color;
+        }
+    }
+    &-text{
+        font-size: 24px;
+        line-height: 180%;
+        color: $gray;
+    }
+}
+.bg-purple{
+    background-color: $purple;
+}
+.bg-orange{
+    background-color: $secondary-color;
+}
+.bg-blue{
+    background-color: $blue;
+}

@@ -1,0 +1,10 @@
+.menu{
+    margin-left: auto; //đẩy toàn bộ qua ben phải
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    &-item{
+        margin-right: 80px;
+        color: inherit; //ke thua tu body
+    }
+}

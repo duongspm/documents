@@ -1,0 +1,52 @@
+//tạo biến
+//các dòng code lòng nhau
+//mixin
+//@mixin nameMixin(){}
+//@include nameMixin();
+@import "./variables"; //import thư viện các biến vô đây
+
+@mixin bgc($bgcolor:red) {
+    background-color: $bgcolor;
+}
+@mixin size($width,$height:$width) {
+    width: $width;
+    height: $height;
+}
+
+html {
+    font-size: 62.5%;
+}
+p{
+    color: $textColor;
+    padding: 2rem;
+    background-color: $background;
+}
+.header{
+    @include bgc(black);
+    padding:2rem;
+    //background-color:yellowgreen;
+    &__inner{
+        color: #fff;
+        &__text{
+            color: blue;
+            &:hover{
+                background-color: chocolate;
+            }
+        }
+        &:hover{
+            background: cyan;
+        }
+    }
+    &:hover{
+        background: cyan;
+    }
+}
+
+.box{
+    @include bgc(rgba(36, 52, 201, 1));
+    @include size(100px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    //transform: translate(-56%,-50%);
+}

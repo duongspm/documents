@@ -1,0 +1,19 @@
+.guide{
+    margin-top: 270px;
+    &-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 80px;
+    }
+    &-content{
+        max-width: 540px;
+        width: 100%;
+    }
+    &-heading{
+        margin-bottom: 20px;
+    }
+    &-desc{
+        margin-bottom: 33px;
+    }
+}

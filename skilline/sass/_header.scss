@@ -1,0 +1,106 @@
+.header{
+    background-color: $yellow;
+    border-radius: 0 0 300px 300px;
+    margin-bottom: 100px;
+    //overflow: hidden;
+    clip-path: ellipse(100% 100% al top);
+    //position: relative;
+    &-container{
+        max-width: 1725px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 15px;
+    
+    }
+    &-top{
+        padding-top: 60px;
+        padding-bottom: 83px;
+        display: flex;
+        //justify-content: space-between;
+        align-items: center;
+        padding-top: 60px;
+    }
+    // &-buttons{
+    //     margin-left: 60px;
+    //     display: flex;
+    //     align-items: center;
+    //     gap:0 34px;
+    // }
+    &-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0 37px;
+        
+    }
+    // &-image{
+    //     position: absolute;
+    //     right: 0;
+    //     bottom:0;
+    //     max-width: 50%;
+    // }
+    &-content{
+        width: 100%;
+        max-width: 681px;
+    }
+    &-heading{
+        font-size: 54px;
+        font-weight: bold;
+        margin-bottom: 34px;
+        line-height: calc(81/54);
+        //ty le fontsize voi lineheight khi phong to thu nho
+        //font-size: 54px;
+        //line-height: 81px;
+
+        color: $secondary-color;
+        span{
+            color: $primary-color;
+        }
+    }
+    &-desc{
+        font-size: 24px;
+        line-height: 160%;
+        margin-bottom: 52px;
+        color: $gray-dark;
+    }
+    &-actions{
+        display: flex;
+        align-items: center;
+        max-width: 600px;
+        .btn--primary{
+            padding: 22px 38px;
+        }
+    }
+    .watch{
+        margin-left: 34px;
+        display: flex;
+        align-items: center;
+        gap: 0 32px;
+        font-size: 24px;
+        line-height: calc(36/24);
+        color: inherit;
+        &-icon{
+            width: 80px;
+            height: 80px;
+            border-radius: 100rem;
+            background: #fff;
+            box-shadow: 2px 20px 60px rgba(61,155,185,0.1);
+            color: #23BDEE;
+            //canh giua flex center
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    // &-btn--play{
+    //     display: flex;
+    //     align-items: center;
+    //     background: #fff;
+    //     border-radius: 100px;
+    //     width: 80px;
+    //     height: 80px;
+    //     color: #23BDEE;
+    //     margin-left: 50px;
+    // }
+    
+}
