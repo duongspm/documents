@@ -1,0 +1,79 @@
+fort-size mặc định là 16px 1em= 1rem = 16px
+62.5% = 10px
+rem phụ thuộc vào kích thước fort chữ của phần tử cái bao nó như là phần tử html	
+em phụ thuộc vào fort-size phần tử chính phần tử hiện tại.
+- Canh giữa
+.divcha{
+	position: relative;
+}
+.divcon{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+- Ẩn
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.25s linear;
+	- Hiện:
+	opacity: 1;
+	visibility: visible;
+	dùng displaynone k dùng translation đc
+
+- Selector: type là kiểu - child là con
+	.title + .demo: class kế bên liền kề
+	.title ~ .demo: cùng cấp
+	.list > li:first-child: con đầu tiên
+	.list > li:last-child: con cuối cùng
+	:nth-child(1) con có thứ tự 1
+	:nth-last-child(1) 1 từ dưới đếm lên
+	.list2 li:last-of-type: kiểu cuối cùng
+	.list2 li:first-of-type: kiểu đầu tiên
+	:nth-of-type(1): kiểu đầu tiên
+	:nth-last-of-type()
+
+	TÌM: ^ bắt đầu, $ kết thúc, * có chứa
+	div[style^="cursor: pointer"] tìm thẻ div có style bắt đầu là cursor:pointer
+	input[type="text"]
+	div[data-title]
+	
+	.header>(a.header__logo>img)+(ul.header__menu>li.menu-item*5)
+
+- Tên biến:
+:root{
+	--tenbien
+}
+	var(--tenbien)
+
+- Responsive 
+	+ breakpoints 320 480 768 1024 1280 1366 1440 1600 1920
+	
+	s//desktop first kích thước phải trừ đi 1px
+	kích thước lớn hơn nằm ở trên
+
+	@media screen and (max-width: 1023px){
+		:root{
+			--danger-color: #ffff;
+		}
+	}
+	
+	//mobile first kích thước lớn ở phải nằm ở dưới
+
+	@media screen and (min-width: 768px){
+		
+	}
+
+- Position dùng để thiết lập các element đè lên nhau
+	reletive: tương đối - phụ thuộc vào nó, đứng yên ở đó 
+	absolute: tuyệt đối
+	fixed: phụ thuộc vào khung trình duyệt
+	sticky: bám dính ( ít đc hỗ trợ )
+
+- min-content max-content fit-content
+	width: min-content; lấy độ rộng của chữ dài nhất
+	width: max-content; lấy độ rộng của full content
+	width: fit-content; lấy độ rộng của full content nếu quá dài chữ sẽ rớt xuống
+
+-- Xoay
+	transform: rotate(-45deg);

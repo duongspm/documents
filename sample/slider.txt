@@ -1,0 +1,119 @@
+#slider{
+	background: url(/assets/images/.png) top center / cover no-repeat;
+	padding-top: 50%; sét chiều cao bằng nữa chiều dài
+}
+
+canh giữa
+#slider .content{
+	position: ab;
+	left:50%;
+	tranform: translateX(-50%);
+	text-align: center;
+}
+
+hoặc set: width:100% hoặc right:0 ; left:0
+
+--------------------
+slick slider
+
+import script: html-slick-slider
+import css: html-slick-css
+
+- app.js
+$(document).ready(function(){
+	$(".tenclass-slider").slick({
+		sliderToShow: 4, //4 hình,
+		slidersToScrool: 2,
+		infinite: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 1000,
+	});
+})
+
+
+-------
+image slider
+div.container>div.outer>div.details
+	.div bự{
+		position: absolute;
+		left: 0
+		top0
+		width100%
+		height 100vh
+		animation: animate 16s ease-in-out infinite;
+		background-size: cover;
+	}
+	@keyframes animate{
+		0%,100%{
+			background-image:url();
+		}
+		25%{
+			background-image:url();
+		}
+		50%{
+			background-image:url();
+		}
+		75%{
+			background-image:url();
+		}
+	
+	hiệu ứng làm mờ	
+	.outer{
+		position: absolute;
+		left0
+		top0
+		width100%
+		height100vh
+		background: rgba(0,0,0,0.5);
+	}
+
+----cach lam slider khac
+	div.id slider>figure>image*5
+	
+	#slider{
+		overflow: hidden;
+	}
+	#slider figure{
+		position: relative;
+		width:500%; 5item
+		margin: 0
+		left: 0
+		animation: 20s slider infinite;
+	}
+	#slider figure img {
+		float: left
+		width: 20%
+	}
+	@keyframes slider{
+		0%{
+			left: 0;
+		}
+		20%{
+			left:0;
+		}
+		25%{
+			left: -100%;
+		}
+		45%{
+			left: -100%;
+		}
+		50%{
+			left: -200%;
+		}
+		70%{
+			left: -200%;
+		}
+		75%{
+			left: -300%;
+		}
+		95%{
+			left: -300%;
+		}
+		100%{
+			left: -400%;
+		}
+	} tùy vào kích thước mà tùy chỉnh lại
+
+
+			
